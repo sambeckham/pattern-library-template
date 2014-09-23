@@ -2,11 +2,16 @@
 layout: base
 ---
 
-<main role="main">
-	<h1>Template</h1>
-	<p>This is an example template.</p>
+<main class="grid" role="main">
+	<section class="column column__6-of-12--large column__4-of-6--medium column__4-of-4">
+		<h1>Template Example</h1>
+		<p>This is an example template.</p>
+	</section>
+	<aside class="column column__6-of-12--large column__2-of-6--medium column__4-of-4">
+		<h2>Sidebar</h2>
+	</aside>
 
 </main>
-<footer>
+<footer role="contentinfo">
     {% include footer.html %}
 </footer>
