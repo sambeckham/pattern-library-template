@@ -1,7 +1,16 @@
-html{
-    color: $color__black;
-    font: $font-weight #{$font-size}%/#{$line-height} $primary-font;
-    height: 100%;
-    -webkit-text-size-adjust: none;
-    word-wrap: break-word;
+u,
+.text--underlined{
+    text-decoration: underline;
+}
+
+b,
+strong,
+.text--bold{
+    font-weight: 700;
+}
+
+i,
+em,
+.text--italic{
+    font-style: italic;
 }

@@ -24,25 +24,25 @@ $grid__gutter-size: 2em;
     margin-right: auto;
 }
 
-@for $i from 1 through $grid__columns--small {
-    .column__#{$i}-of-#{$grid__columns--small},
-    .column__#{$i}-of-#{$grid__columns--small}--small{
-        width: percentage( $i / $grid__columns--small );
-    }
-}
+// @for $i from 1 through $grid__columns--small {
+//     .column__#{$i}-of-#{$grid__columns--small},
+//     .column__#{$i}-of-#{$grid__columns--small}--small{
+//         width: percentage( $i / $grid__columns--small );
+//     }
+// }
 
-@for $i from 1 through $grid__columns--medium {
-    .column__#{$i}-of-#{$grid__columns--medium}--medium{
-        @media (min-width: $breakpoint__m) {
-            width: percentage( $i / $grid__columns--medium );
-        }
-    }
-}
+// @for $i from 1 through $grid__columns--medium {
+//     .column__#{$i}-of-#{$grid__columns--medium}--medium{
+//         @media (min-width: $breakpoint__m) {
+//             width: percentage( $i / $grid__columns--medium );
+//         }
+//     }
+// }
 
-@for $i from 1 through $grid__columns--large {
-    .column__#{$i}-of-#{$grid__columns--large}--large{
-        @media (min-width: $breakpoint__l) {
-            width: percentage( $i / $grid__columns--large );
-        }
-    }
-}
+// @for $i from 1 through $grid__columns--large {
+//     .column__#{$i}-of-#{$grid__columns--large}--large{
+//         @media (min-width: $breakpoint__l) {
+//             width: percentage( $i / $grid__columns--large );
+//         }
+//     }
+// }
