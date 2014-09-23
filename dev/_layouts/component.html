@@ -1,5 +1,6 @@
 ---
 layout: base
+pattern-stylesheet: true
 ---
 
 <main role="main">
@@ -8,7 +9,10 @@ layout: base
         {{ page.description | markdownify }}
         {{ content }}
     </div>
-    <div class="highlight">
-        <pre><code>{{ content | xml_escape }}</code></pre>
-    </div>
+{% capture code %}
+{% highlight html %}
+{{ content }}
+{% endhighlight %}
+{% endcapture %}
+    {{ code | markdownify }}
 </main>

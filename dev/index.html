@@ -1,15 +1,8 @@
 ---
 layout: base
 title: Hello World
+pattern-stylesheet: true
 ---
-
-<style>
-    {% capture patterns__styles %}
-        {% include patterns.scss %}
-    {% endcapture %}
-
-    {{ patterns__styles | scssify }}
-</style>
 
 <main role="main">
     <h1>Patterns</h1>
@@ -24,6 +17,7 @@ title: Hello World
     </nav>
     <ul class="pattern__components">
         {% for component in components %}
+
             <li id="component__{{ component.title | slugify }}" class="pattern__component">
                 <div class="wrapper">
                     <h2>{{ component.title }}</h2>
@@ -33,9 +27,12 @@ title: Hello World
                         {{ component.content }}
                     </div>
                 </div>
-                <div class="highlight">
-                    <pre><code>{{ component.content | xml_escape }}</code></pre>
-                </div>
+{% capture code %}
+{% highlight html %}
+{{ component.content }}
+{% endhighlight %}
+{% endcapture %}
+                {{ code | markdownify }}
             </li>
         {% endfor %}
     </ul>

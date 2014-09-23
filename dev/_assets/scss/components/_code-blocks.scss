@@ -1,0 +1,11 @@
+code{
+    background-color: $color__black;
+    color: $color__white;
+
+    pre & {
+        display: block;
+        width: 100%;
+        padding: $ratio--inv#{em} $ratio#{em};
+        margin: $ratio--inv#{em} 0;
+    }
+}
