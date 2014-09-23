@@ -5,8 +5,13 @@
     <link rel="stylesheet" media="all" href="/css/screen.css">
     {% if page.pattern-stylesheet %}<link rel="stylesheet" media="all" href="/css/patterns.css">{% endif %}
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+
+    <!-- bower:js -->
+        <script src="/../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbower -->
 </head>
 <body>
     {{ content }}
 </body>
 </html>
+
