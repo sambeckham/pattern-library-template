@@ -33,7 +33,7 @@ $grid__gutter-size: 2em;
 
 @for $i from 1 through $grid__columns--medium {
     .column__#{$i}-of-#{$grid__columns--medium}--medium{
-        @media (min-width: $breakpoint__m) {
+        @include breakpoint(small){
             width: percentage( $i / $grid__columns--medium );
         }
     }
@@ -41,7 +41,7 @@ $grid__gutter-size: 2em;
 
 @for $i from 1 through $grid__columns--large {
     .column__#{$i}-of-#{$grid__columns--large}--large{
-        @media (min-width: $breakpoint__l) {
+        @include breakpoint(medium){
             width: percentage( $i / $grid__columns--large );
         }
     }

@@ -1,8 +1,20 @@
 // Main Colors
 // --------------------------------------------------
 $color__black : #333;
-$color__grey : #999;
+$color__gray : #999;
 $color__white : #eee;
+
+$color__blue: #09c;
+$color__blue--light: lighten($color__blue, 20%);
+$color__blue--dark: darken($color__blue, 20%);
+
+$color__red: #c33;
+$color__red--light: lighten($color__red, 20%);
+$color__red--dark: darken($color__red, 20%);
+
+$color__purple: #96c;
+$color__purple--light: lighten($color__purple, 20%);
+$color__purple--dark: darken($color__purple, 20%);
 
 
 // Brand Colors
