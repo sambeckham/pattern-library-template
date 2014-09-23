@@ -5,7 +5,7 @@ $grid__columns--large: 12;
 $grid__gutter-size: 2em;
 
 .grid{
-    // @include clearfix();
+    @extend .cf;
 }
 
 .column{
