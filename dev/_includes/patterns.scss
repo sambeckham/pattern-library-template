@@ -1,3 +1,15 @@
-html{
-    background-color: #0f0;
+$color__black : #333;
+$color__grey : #999;
+$color__white : #eee;
+
+code{
+    background-color: $color__black;
+    color: $color__white;
+
+    pre & {
+        display: block;
+        width: 100%;
+        padding: 0.618033em 1.618033em;
+        margin: 0.618033em 0;
+    }
 }

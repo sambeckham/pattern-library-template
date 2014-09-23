@@ -9,7 +9,7 @@ module.exports = {
     jekyll: {
         files: [
             'dev/*.{html,md}',
-            'dev/_includes/*.html',
+            'dev/_includes/*.{html,scss}',
             'dev/_layouts/*.html',
             'dev/patterns/*.html',
             'dev/_plugins/*.rb'
