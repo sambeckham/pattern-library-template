@@ -5,3 +5,50 @@ html{
     -webkit-text-size-adjust: none;
     word-wrap: break-word;
 }
+
+body{
+    height: 100%;
+}
+
+strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
+
+small{
+    font-size: $ratio--inv#{em};
+}
+
+h1 {
+    @extend .delta;
+    @extend %hN;
+    text-transform: uppercase;
+}
+
+h2 {
+    @extend .epsilon;
+    @extend %hN;
+}
+
+h3 {
+    @extend .epsilon;
+    @extend %hN;
+}
+
+h4 {
+    @extend .epsilon;
+    @extend %hN;
+}
+
+h5 {
+    @extend .zeta;
+    @extend %hN;
+}
+
+h6 {
+    @extend .zeta;
+    @extend %hN;
+}
