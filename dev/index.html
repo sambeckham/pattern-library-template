@@ -25,16 +25,16 @@ title: Hello World
     <ul class="pattern__components">
         {% for component in components %}
             <li id="component__{{ component.title | slugify }}" class="pattern__component">
-                <div class="content">
+                <div class="wrapper">
                     <h2>{{ component.title }}</h2>
                     <a href="{{ component.url }}" class="pattern__link"></a>
                     {{ component.description | markdownify }}
                     <div class="pattern__component__example">
                         {{ component.content }}
                     </div>
-                    <div class="highlight">
-                        <pre><code>{{ component.content | xml_escape }}</code></pre>
-                    </div>
+                </div>
+                <div class="highlight">
+                    <pre><code>{{ component.content | xml_escape }}</code></pre>
                 </div>
             </li>
         {% endfor %}
