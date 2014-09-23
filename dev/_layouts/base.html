@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" media="all" href="/css/screen.css">
+    {% if page.pattern-stylesheet %}<link rel="stylesheet" media="all" href="/css/patterns.css">{% endif %}
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
 </head>
 <body>

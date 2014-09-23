@@ -1,15 +1,8 @@
 ---
 layout: base
 title: Hello World
+pattern-stylesheet: true
 ---
-
-<style>
-    {% capture patterns__styles %}
-        {% include patterns.scss %}
-    {% endcapture %}
-
-    {{ patterns__styles | scssify }}
-</style>
 
 <main role="main">
     <h1>Patterns</h1>
