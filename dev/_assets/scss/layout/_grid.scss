@@ -5,7 +5,7 @@ $grid__columns--large: 12;
 $grid__gutter-size: 2em;
 
 .grid{
-    // @include clearfix();
+    @extend .cf;
 }
 
 .column{
@@ -40,7 +40,7 @@ $grid__gutter-size: 2em;
 }
 
 @for $i from 1 through $grid__columns--large {
-    .column_#{$i}-of-#{$grid__columns--large}--large{
+    .column__#{$i}-of-#{$grid__columns--large}--large{
         @media (min-width: $breakpoint__l) {
             width: percentage( $i / $grid__columns--large );
         }
