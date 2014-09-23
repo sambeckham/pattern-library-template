@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    width: 100%;
+}
+
+%wrapper{
+    max-width: $breakpoint__l;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $ratio#{em};
+}
+
+.wrapper{
+    @extend %wrapper;
+}
