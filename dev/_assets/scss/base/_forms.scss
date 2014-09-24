@@ -14,19 +14,16 @@
 // Basic styles on inputs
 
 %input{
-    font-family: $primary-font;
+    font-family: $body-font;
     display: block;
     width: 100%;
-    padding: $ratio-inv#{em};
+    padding: $ratio--inv#{em};
     background-color: $color__white;
-    font-size: $ratio-inv#{em};
+    font-size: $ratio--inv#{em};
     border: 1px solid $color__gray;
     color: $color__black;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
-
-    @include appearance(none);
-    @include border-radius(pow($ratio-inv, 3)#{em});
 
     &:focus{
         border-color: $color__black;
@@ -45,7 +42,7 @@
     }
 
     .success &{
-        border-color: $color_green;
+        border-color: $color__blue;
     }
 
     &[disabled]{
@@ -77,8 +74,18 @@ select{
 
 .error{
     .message{
-        margin: $ratio-inv#{em} 0;
+        margin: $ratio--inv#{em} 0;
         color: $color__red;
         fill: $color__red;
     }
 }
+
+
+// Extend the styles of button on to the from buttons
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+    // @extend .button;
+}
+
