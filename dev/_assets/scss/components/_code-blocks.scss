@@ -7,5 +7,6 @@ code{
         width: 100%;
         padding: $ratio--inv#{em} $ratio#{em};
         margin: $ratio--inv#{em} 0;
+        overflow: auto;
     }
 }
