@@ -1,0 +1,82 @@
+// Group sets of form fields in a list, e.g.:
+ 
+.form-fields{
+    list-style:none;
+    margin:0;
+}
+    .form-fields > li{
+        margin-bottom: $ratio#{em};
+    }
+    .form-fields > li:last-child{
+        margin-bottom:0;
+    }
+
+%input{
+    font-family: $primary-font;
+    display: block;
+    width: 100%;
+    padding: $ratio-inv#{em};
+    background-color: $color__white;
+    font-size: $ratio-inv#{em};
+    border: 1px solid $color__gray;
+    color: $color__black;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+
+    @include appearance(none);
+    @include border-radius(pow($ratio-inv, 3)#{em});
+
+    &:focus{
+        border-color: $color__black;
+        outline: none;
+    }
+
+    .error &{
+        background-color: $color__red;
+        color: $color__white;
+
+        &:focus{
+            background-color: $color__white;
+            color: $color__black;
+            border-color: $color__red;
+        }
+    }
+
+    .success &{
+        border-color: $color_green;
+    }
+
+    &[disabled]{
+        background: $color__gray;
+        color: $color__white;
+        cursor: not-allowed;
+    }
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='url'],
+textarea,
+select{
+    @extend %input;
+}
+
+textarea{
+    resize: vertical;
+}
+
+select{
+    cursor: pointer;
+}
+
+.error{
+    .message{
+        margin: $ratio-inv#{em} 0;
+        color: $color__red;
+        fill: $color__red;
+    }
+}
