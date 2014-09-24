@@ -12,6 +12,10 @@ $color__red: #c33;
 $color__red--light: lighten($color__red, 20%);
 $color__red--dark: darken($color__red, 20%);
 
+$color__green: #a6e22d;
+$color__green--light: lighten($color__red, 20%);
+$color__green--dark: darken($color__red, 20%);
+
 $color__purple: #96c;
 $color__purple--light: lighten($color__purple, 20%);
 $color__purple--dark: darken($color__purple, 20%);
@@ -23,3 +27,10 @@ $color__twitter : #00acee;
 $color__facebook : #3b5998;
 $color__google : #db4a39;
 $color__pinterest : #c8232c;
+
+
+// Element Colors
+// --------------------------------------------------
+
+$color__positive : $color__green;
+$col0r__negative : $color__red

@@ -42,7 +42,8 @@
     }
 
     .success &{
-        border-color: $color__blue;
+        background-color: $color__green;
+        border-color: $color__green;
     }
 
     &[disabled]{
@@ -81,6 +82,14 @@ select{
 }
 
 
+.sucess{
+    .message{
+        margin: $ratio--inv#{em} 0;
+        color: $color__green;
+        fill: $color__green;
+    }
+}
+
 // Extend the styles of button on to the from buttons
 
 input[type="submit"],
@@ -89,3 +98,40 @@ input[type="button"]{
     // @extend .button;
 }
 
+
+// checkboxes
+
+input[type="checkbox"],
+input[type="radio"]{
+    display: none;
+
+    & ~ span {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background-color: $color__gray;
+    }
+
+    & ~ label{
+        position: relative;
+        cursor: pointer;
+    }
+
+    &:checked{
+        & ~ span{
+            background: $color__green
+        }
+    }
+}
+
+input[type="radio"]{
+    & ~ svg{
+        border-radius: 100%;
+    }
+}
+
+.optional{
+    label:after{
+        content: " (optional)";
+    }
+}
