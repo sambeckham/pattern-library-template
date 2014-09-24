@@ -5,9 +5,11 @@ pattern-stylesheet: true
 
 <main role="main">
     <div class="wrapper">
-        <h1>{{ page.title }}</h1>
-        {{ page.description | markdownify }}
-        {{ content }}
+		<header class="pattern__header">
+        	<h1>{{ page.title }}</h1>
+        	{{ page.description | markdownify }}
+		</header>
+        <div class="pattern__component__example">{{ content }}</div>
     </div>
 {% capture code %}
 {% highlight html %}

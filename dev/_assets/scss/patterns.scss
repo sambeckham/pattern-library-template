@@ -2,10 +2,72 @@
 @import "base/color-scheme.scss";
 @import "base/mixins.scss";
 
+// Load these here because we don't need them in the app.
 @import "components/code-blocks.scss";
 @import "components/syntax.scss";
 
-.pattern__component { margin: 2 + $ratio#{em} 0; }
+.pattern__header{
+	padding-top: $ratio#{em};
+	margin-bottom: $ratio#{em};
+	border-bottom: 1px solid $color__gray;
+
+	h1{
+		border-bottom: 1px solid;
+		display: block;
+		padding-bottom: pow($ratio--inv, 3)#{em};
+	}
+}
+
+.pattern__nav{
+	margin-bottom: $ratio#{em};
+
+	ul {
+		@include breakpoint(small){
+			columns: 2;
+		}
+		@include breakpoint(medium){
+			columns: 3;
+		}
+	}
+}
+
+.pattern__component {
+	margin: $ratio#{em} 0;
+	
+	.wrapper{
+		position: relative;
+	}
+}
+
+.pattern__component__link{
+	position: absolute;
+	top: 1 + ($ratio--inv / 2)#{em};
+	right: $ratio#{em};
+}
+
+.pattern__component__details{
+	> h3{
+		padding-top: 1em;
+	}
+}
+
 .pattern__component__example { 
-	padding-top: $ratio#{em}; 
+	padding: $ratio#{em};
+	outline: 1px solid $color__gray;
+	position: relative;
+	margin-top: $ratio#{em};
+
+	&:before{
+		content: "e.g.";
+		position: absolute;
+		top: - $ratio / 2#{em};
+		left: $ratio--inv#{em};
+		background-color: $color__white;
+		padding: 0 $ratio--inv#{em};
+
+
+    	@include breakpoint(small){
+			content: "Example"
+    	}
+	}
 }
