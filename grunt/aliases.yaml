@@ -15,4 +15,6 @@ build:
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
+ - 'requirejs'
+ - 'processhtml'
  - 'htmlmin'

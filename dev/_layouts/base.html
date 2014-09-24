@@ -6,13 +6,12 @@
     {% if page.pattern-stylesheet %}<link rel="stylesheet" media="all" href="/css/patterns.css">{% endif %}
     <title>{% if page.title %}{{ page.title }}{% endif %}</title>
 
-    <!-- bower:js -->
-        <script src="/../bower_components/modernizr/modernizr.js"></script>
-    <!-- endbower -->
+    <script src="/../bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
     {{ content }}
-    <script data-main="/scripts/main.js" src="/../bower_components/requirejs/require.js"></script>
+    <!-- build:js /scripts/main.js -->
+        <script data-main="/scripts/main.js" src="/../bower_components/requirejs/require.js"></script>
+    <!-- /build -->
 </body>
 </html>
-

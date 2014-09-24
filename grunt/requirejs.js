@@ -1,18 +1,13 @@
 module.exports = {
     compile: {
         options: {
-            baseUrl: '<%= config.tmp %>/scripts',
+            baseUrl: 'dev/_assets/scripts',
             paths: {
-                requireLib: '<%= config.bower_components %>/requirejs/require',
-                chosen: '<%= config.bower_components %>/chosen/chosen.jquery',
-                jquery: '<%= config.bower_components %>/jquery/dist/jquery',
-                FitVids: '<%= config.bower_components %>/FitVids/jquery.fitvids',
-                sharrre: '<%= config.bower_components %>/sharrre/jquery.sharrre.min',
-                masonry: '<%= config.bower_components %>/masonry/dist/masonry.pkgd',
-                grunticon: '../../<%= config.dist %>/icons/grunticon.loader'
+                requireLib: '../../../bower_components/requirejs/require',
+                jquery: '../../../bower_components/jquery/dist/jquery',
             },
             name: 'main',
-            out: '<%= config.dist %>/scripts/main.js',
+            out: 'web/scripts/main.js',
             include: ['requireLib'],
         }
     }
