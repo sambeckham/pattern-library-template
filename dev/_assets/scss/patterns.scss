@@ -33,6 +33,16 @@
 
 .pattern__component {
 	margin: $ratio#{em} 0;
+	
+	.wrapper{
+		position: relative;
+	}
+}
+
+.pattern__component__link{
+	position: absolute;
+	top: 1 + ($ratio--inv / 2)#{em};
+	right: $ratio#{em};
 }
 
 .pattern__component__details{

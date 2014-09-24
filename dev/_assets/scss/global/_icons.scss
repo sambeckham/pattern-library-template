@@ -1,8 +1,7 @@
 .icon{
-	fill: $color__black;
     display: inline-block;
-    width: pow($ratio, 2)#{em};
-    height: pow($ratio, 2)#{em};
+    width: $ratio#{em};
+    height: $ratio#{em};
 }
 
 .icon__facebook{

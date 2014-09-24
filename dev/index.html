@@ -27,7 +27,11 @@ pattern-stylesheet: true
                 <div class="wrapper">
                     <div class="pattern__component__details">
                         <h3>{{ component.title }}</h3>
-                        <a href="{{ component.url }}" class="pattern__link"></a>
+                        <a href="{{ component.url }}" class="pattern__component__link">
+                            <svg viewBox="0 0 100 100" class="icon icon__roundel">
+                                <use xlink:href="#icon__roundel"></use>
+                            </svg>
+                        </a>
                         {{ component.description | markdownify }}
                     </div>
                     <div class="pattern__component__example">
