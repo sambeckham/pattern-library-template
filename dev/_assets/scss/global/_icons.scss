@@ -1,5 +1,14 @@
 .icon{
+	fill: $color__black;
     display: inline-block;
-    width: $ratio#{em};
-    height: $ratio#{em};
+    width: pow($ratio, 2)#{em};
+    height: pow($ratio, 2)#{em};
+}
+
+.icon__facebook{
+	fill: $color__facebook;
+}
+
+.icon__twitter{
+	fill: $color__twitter;
 }
