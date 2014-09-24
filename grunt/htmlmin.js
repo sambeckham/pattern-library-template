@@ -4,6 +4,8 @@ module.exports = {
             collapseWhitespace: true,
             removeComments: true,
             removeIgnored: true,
+            caseSensitive: true,
+            keepClosingSlash: true
         },
         files: [{
             expand: true,

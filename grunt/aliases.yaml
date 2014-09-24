@@ -13,6 +13,7 @@ serve:
 
 build:
  - 'clean:dist'
+ - 'svgstore'
  - 'jekyll:dist'
  - 'sass:dist'
  - 'autoprefixer:dist'
