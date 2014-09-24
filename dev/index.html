@@ -5,24 +5,31 @@ pattern-stylesheet: true
 ---
 
 <main role="main">
-    <h1>Patterns</h1>
-    <nav>
-        <ul>
-            {% assign components = site.pages | where: 'dir', '/patterns' | sort: 'group' %}
+    <header class="pattern__header">
+        <div class="wrapper">
+            <h1>Pattern Library</h1>
+            <nav class="pattern__nav">
+                <h2>Components</h2>
+                <ul>
+                    {% assign components = site.pages | where: 'dir', '/patterns' | sort: 'group' %}
 
-            {% for component in components %}
-                <li><a href="#component__{{ component.title | slugify }}">{{ component.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
+                    {% for component in components %}
+                        <li><a href="#component__{{ component.title | slugify }}">{{ component.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <ul class="pattern__components">
         {% for component in components %}
-
             <li id="component__{{ component.title | slugify }}" class="pattern__component">
                 <div class="wrapper">
-                    <h2>{{ component.title }}</h2>
-                    <a href="{{ component.url }}" class="pattern__link"></a>
-                    {{ component.description | markdownify }}
+                    <div class="pattern__component__details">
+                        <h3>{{ component.title }}</h3>
+                        <a href="{{ component.url }}" class="pattern__link"></a>
+                        {{ component.description | markdownify }}
+                    </div>
                     <div class="pattern__component__example">
                         {{ component.content }}
                     </div>
