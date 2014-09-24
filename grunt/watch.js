@@ -10,6 +10,15 @@ module.exports = {
         files: ['dev/_assets/scripts/{,*/}*.js'],
         tasks: ['copy:scripts']
     },
+    svg: {
+        files: ['dev/_assets/svg/*.svg'],
+        tasks: [
+            'svgstore:dev',
+            'jekyll:dev',
+            'sass:dev',
+            'autoprefixer:dev'
+        ]
+    },
     jekyll: {
         files: [
             'dev/*.{html,md}',
