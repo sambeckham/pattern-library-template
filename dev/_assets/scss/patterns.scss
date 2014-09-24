@@ -4,3 +4,8 @@
 
 @import "components/code-blocks.scss";
 @import "components/syntax.scss";
+
+.pattern__component { margin: 2 + $ratio#{em} 0; }
+.pattern__component__example { 
+	padding-top: $ratio#{em}; 
+}
