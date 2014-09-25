@@ -18,5 +18,6 @@ build:
  - 'sass:dist'
  - 'autoprefixer:dist'
  - 'requirejs'
+ - 'modernizr'
  - 'processhtml'
- - 'htmlmin'
+ # - 'htmlmin'
