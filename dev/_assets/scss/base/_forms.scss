@@ -1,25 +1,24 @@
 // Group sets of form fields in a list.
- 
+
 .form-fields{
     list-style:none;
     margin:0;
 }
-    .form-fields > li{
-        margin-bottom: $ratio#{em};
-    }
-        .form-fields > li:last-child{
-            margin-bottom:0;
-        }
+.form-fields > li{
+    margin-bottom: $ratio#{em};
+}
+.form-fields > li:last-child{
+    margin-bottom:0;
+}
 
 // Basic styles on inputs.
 
 %input{
-    font-family: $body-font;
+    font-size: 1em;
     display: block;
     width: 100%;
     padding: $ratio--inv#{em};
     background-color: $color__white;
-    font-size: $ratio--inv#{em};
     border: 1px solid $color__gray;
     color: $color__black;
     -webkit-backface-visibility: hidden;
@@ -89,16 +88,6 @@ select{
     }
 }
 
-// Extend the styles of button on to the form buttons.
-// When you have some button styles uncomment and extend.
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"]{
-    // @extend .button;
-}
-
-
 // Styles for the Checkboxes and the radios
 
 input[type="checkbox"],
@@ -125,7 +114,7 @@ input[type="radio"]{
 }
 
 input[type="radio"]{
-    & ~ svg{
+    & ~ span{
         border-radius: 100%;
     }
 }
