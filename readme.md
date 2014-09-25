@@ -1,22 +1,24 @@
 # Pattern Library Template
 
-This template gets you set up with everything* you need to get started on a pattern library.
+This template gets you set up with everything you need to get started on your own pattern library.
 
 ## Set up
-In order to run this pattern library genrator correctly you'll need to follow a couple of steps.
+In order to run this pattern library genrator correctly you'll need to follow a couple of steps first.
 
 1. `$ gem install jekyll` — If you don't already have jekyll on your machine.
 2. `$ npm install` — To get all the dependencies for grunt.
+3. `$ bower install` — To get all the dependencies for bower.
 
 ## Running the project
-Just simply execute `grunt` or `grunt serve` and the project will build itself, set up a server, open the library page and wait for you to make changes.
+Run `grunt` or `grunt serve` on the command line and the project will build itself, set up a server, open the index page, and wait for you to make changes.
 
 ## Building the project
-Once you're happy with everything, run `grunt build` and it will compile, minify and compress everything ready for production. Pop the repo on your server and get it to point to the `web` directory, job's a good-un.
+Once you're happy with everything, run `grunt build` and it will compile everything ready for production. All the built files will go into the `web` directory, just point your server here and you're good to go.
 
-* almost everything
+Optionally, you can set your pattern library up on GitHub pages. I'll pull together a more tailored walkthrough but for now you can get the basic jist [here](https://help.github.com/articles/creating-project-pages-manually).
 
-## Whats used
+## What's included
+We've included some basic stuff to get you started but feel free to rip anything out you don't need and add anything you do.
 
 * Grunt
 	* Autoprefixer
@@ -40,4 +42,6 @@ Once you're happy with everything, run `grunt build` and it will compile, minify
 
 * Jekyll
 
+## Issues
 
+If you come across any bugs or would like a feature implimented, [log an issue](https://github.com/sambeckham/pattern-library-template/issues/new); or—better yet—fix it and submit a pull request.

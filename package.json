@@ -1,6 +1,6 @@
 {
   "name": "pattern-library-template",
-  "description": "A simple template/boilerplate for a Jekyll generated pattern library.",
+  "description": "A simple template/boilerplate for a Jekyll-generated pattern library.",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "^0.4.5",
