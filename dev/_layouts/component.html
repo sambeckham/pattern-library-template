@@ -11,10 +11,10 @@ pattern-stylesheet: true
 		</header>
         <div class="pattern__component__example">{{ content }}</div>
     </div>
-{% capture code %}
-{% highlight html %}
-{{ content }}
-{% endhighlight %}
-{% endcapture %}
+	{% capture code %}
+	{% highlight html %}
+	{{ content }}
+	{% endhighlight %}
+	{% endcapture %}
     {{ code | markdownify }}
 </main>

@@ -65,7 +65,6 @@
 		background-color: $color__white;
 		padding: 0 $ratio--inv#{em};
 
-
     	@include breakpoint(small){
 			content: "Example"
     	}

@@ -15,3 +15,29 @@ Just simply execute `grunt` or `grunt serve` and the project will build itself, 
 Once you're happy with everything, run `grunt build` and it will compile, minify and compress everything ready for production. Pop the repo on your server and get it to point to the `web` directory, job's a good-un.
 
 * almost everything
+
+## Whats used
+
+* Grunt
+	* Autoprefixer
+	* Clean
+	* Connect
+	* Copy
+	* Htmlmin
+	* Requirejs
+	* Sass
+	* Watch
+	* Jekyll
+	* Processhtml
+	* Svgstore
+	* Jit-grunt
+	* Load-grunt-config
+
+* Bower
+	* Require.js
+	* Modernizr
+	* Jquery
+
+* Jekyll
+
+

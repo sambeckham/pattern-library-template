@@ -1,4 +1,4 @@
-// Group sets of form fields in a list, e.g.:
+// Group sets of form fields in a list.
  
 .form-fields{
     list-style:none;
@@ -7,11 +7,11 @@
     .form-fields > li{
         margin-bottom: $ratio#{em};
     }
-    .form-fields > li:last-child{
-        margin-bottom:0;
-    }
+        .form-fields > li:last-child{
+            margin-bottom:0;
+        }
 
-// Basic styles on inputs
+// Basic styles on inputs.
 
 %input{
     font-family: $body-font;
@@ -81,7 +81,6 @@ select{
     }
 }
 
-
 .sucess{
     .message{
         margin: $ratio--inv#{em} 0;
@@ -90,7 +89,8 @@ select{
     }
 }
 
-// Extend the styles of button on to the from buttons
+// Extend the styles of button on to the form buttons.
+// When you have some button styles uncomment and extend.
 
 input[type="submit"],
 input[type="reset"],
@@ -99,7 +99,7 @@ input[type="button"]{
 }
 
 
-// checkboxes
+// Styles for the Checkboxes and the radios
 
 input[type="checkbox"],
 input[type="radio"]{
@@ -119,7 +119,7 @@ input[type="radio"]{
 
     &:checked{
         & ~ span{
-            background: $color__green
+            background: $color__green;
         }
     }
 }
@@ -129,6 +129,8 @@ input[type="radio"]{
         border-radius: 100%;
     }
 }
+
+// Optional class to add to form to create optional content
 
 .optional{
     label:after{
