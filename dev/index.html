@@ -1,41 +1,49 @@
 ---
 layout: base
 title: Hello World
+pattern-stylesheet: true
 ---
 
-<style>
-    {% capture patterns__styles %}
-        {% include patterns.scss %}
-    {% endcapture %}
-
-    {{ patterns__styles | scssify }}
-</style>
-
 <main role="main">
-    <h1>Patterns</h1>
-    <nav>
-        <ul>
-            {% assign components = site.pages | where: 'dir', '/patterns' | sort: 'group' %}
+    <header class="pattern__header">
+        <div class="wrapper">
+            <h1>Pattern Library</h1>
+            <nav class="pattern__nav">
+                <h2>Components</h2>
+                <ul>
+                    {% assign components = site.pages | where: 'dir', '/patterns' | sort: 'group' %}
 
-            {% for component in components %}
-                <li><a href="#component__{{ component.title | slugify }}">{{ component.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
+                    {% for component in components %}
+                        <li><a href="#component__{{ component.title | slugify }}">{{ component.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <ul class="pattern__components">
         {% for component in components %}
             <li id="component__{{ component.title | slugify }}" class="pattern__component">
-                <div class="content">
-                    <h2>{{ component.title }}</h2>
-                    <a href="{{ component.url }}" class="pattern__link"></a>
-                    {{ component.description | markdownify }}
+                <div class="wrapper">
+                    <div class="pattern__component__details">
+                        <h3>{{ component.title }}</h3>
+                        <a href="{{ component.url }}" class="pattern__component__link">
+                            <svg viewBox="0 0 100 100" class="icon icon__roundel">
+                                <use xlink:href="#icon__roundel"></use>
+                            </svg>
+                        </a>
+                        {{ component.description | markdownify }}
+                    </div>
                     <div class="pattern__component__example">
                         {{ component.content }}
                     </div>
-                    <div class="highlight">
-                        <pre><code>{{ component.content | xml_escape }}</code></pre>
-                    </div>
                 </div>
+{% capture code %}
+{% highlight html %}
+{{ component.content }}
+{% endhighlight %}
+{% endcapture %}
+                {{ code | markdownify }}
             </li>
         {% endfor %}
     </ul>
