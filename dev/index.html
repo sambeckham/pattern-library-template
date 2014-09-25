@@ -38,11 +38,11 @@ pattern-stylesheet: true
                         {{ component.content }}
                     </div>
                 </div>
-{% capture code %}
-{% highlight html %}
-{{ component.content }}
-{% endhighlight %}
-{% endcapture %}
+                {% capture code %}
+                {% highlight html %}
+                {{ component.content }}
+                {% endhighlight %}
+                {% endcapture %}
                 {{ code | markdownify }}
             </li>
         {% endfor %}
