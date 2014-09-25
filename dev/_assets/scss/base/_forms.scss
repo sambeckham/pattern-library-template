@@ -43,6 +43,13 @@
     .success &{
         background-color: $color__green;
         border-color: $color__green;
+        color: $color__white;
+
+        &:focus{
+            background-color: $color__white;
+            color: $color__black;
+            border-color: $color__green;
+        }
     }
 
     &[disabled]{
@@ -80,7 +87,7 @@ select{
     }
 }
 
-.sucess{
+.success{
     .message{
         margin: $ratio--inv#{em} 0;
         color: $color__green;
