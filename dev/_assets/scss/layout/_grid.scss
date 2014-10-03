@@ -1,6 +1,4 @@
-$grid__columns--small: 4;
-$grid__columns--medium: 6;
-$grid__columns--large: 12;
+$grid__columns: 12;
 
 $grid__gutter-size: 2em;
 
@@ -24,25 +22,32 @@ $grid__gutter-size: 2em;
     margin-right: auto;
 }
 
-@for $i from 1 through $grid__columns--small {
-    .column__#{$i}-of-#{$grid__columns--small},
-    .column__#{$i}-of-#{$grid__columns--small}--small{
-        width: percentage( $i / $grid__columns--small );
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}{
+        width: percentage( $i / $grid__columns );
     }
 }
 
-@for $i from 1 through $grid__columns--medium {
-    .column__#{$i}-of-#{$grid__columns--medium}--medium{
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}--small{
         @include breakpoint(small){
-            width: percentage( $i / $grid__columns--medium );
+            width: percentage( $i / $grid__columns );
         }
     }
 }
 
-@for $i from 1 through $grid__columns--large {
-    .column__#{$i}-of-#{$grid__columns--large}--large{
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}--medium{
         @include breakpoint(medium){
-            width: percentage( $i / $grid__columns--large );
+            width: percentage( $i / $grid__columns );
+        }
+    }
+}
+
+@for $i from 1 through $grid__columns {
+    .column__#{$i}-of-#{$grid__columns}--large{
+        @include breakpoint(large){
+            width: percentage( $i / $grid__columns );
         }
     }
 }
