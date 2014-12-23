@@ -1,2 +1,5 @@
 name: Pattern Library Template
 markdown: kramdown
+collections:
+  components:
+   output: true

@@ -13,7 +13,7 @@ pattern-stylesheet: true
                 <ul>
                     {% assign components = site.pages | where: 'dir', '/patterns' | sort: 'group' %}
 
-                    {% for component in components %}
+                    {% for component in site.components %}
                         <li><a href="#component__{{ component.title | slugify }}">{{ component.title }}</a></li>
                     {% endfor %}
                 </ul>
@@ -22,7 +22,7 @@ pattern-stylesheet: true
     </header>
 
     <ul class="pattern__components">
-        {% for component in components %}
+        {% for component in site.components %}
             <li id="component__{{ component.title | slugify }}" class="pattern__component">
                 <div class="wrapper">
                     <div class="pattern__component__details">
