@@ -14,25 +14,19 @@ module.exports = {
         files: ['dev/_assets/svg/*.svg'],
         tasks: [
             'svgstore:dev',
-            'jekyll:dev',
-            'sass:dev',
-            'autoprefixer:dev'
+            'regenerate'
         ]
     },
     jekyll: {
         files: [
             'dev/*.{html,md}',
-            'dev/_includes/*.{html,scss}',
             'dev/_layouts/*.html',
-            'dev/patterns/*.html',
-            'dev/templates/*.html',
+            'dev/_includes/*.html',
+            'dev/_templates/*.{md,markdown,html}',
+            'dev/_components/*.{md,markdown,html}',
             'dev/_plugins/*.rb'
         ],
-        tasks: [
-            'jekyll:dev',
-            'sass:dev',
-            'autoprefixer:dev',
-        ]
+        tasks: ['regenerate']
     },
     configFiles: {
         files: ['gruntfile.js', 'grunt/*.{js,yaml}'],

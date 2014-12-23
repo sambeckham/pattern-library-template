@@ -21,3 +21,8 @@ build:
  - 'modernizr'
  - 'processhtml'
  - 'htmlmin'
+
+regenerate:
+ - 'jekyll:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'

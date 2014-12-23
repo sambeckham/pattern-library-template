@@ -15,30 +15,23 @@ description: |
     <ul class="checkboxes">
         <li>
             <input type="checkbox" class="checkbox" name="checkbox--01" id="checkbox--01-01">
-            <span></span>                              
+            <span></span>
             <label for="checkbox--01-01">Option 1</label>
         </li>
         <li>
             <input type="checkbox" class="checkbox" name="checkbox--01" id="checkbox--01-02">
-            <span></span>                                    
+            <span></span>
             <label for="checkbox--01-02">Option 2</label>
         </li>
         <li>
             <input type="checkbox" class="checkbox" name="checkbox--01" id="checkbox--01-03">
-            <span></span>                                   
+            <span></span>
             <label for="checkbox--01-03">Option 3</label>
         </li>
         <li>
             <input type="checkbox" class="checkbox" name="checkbox--01" id="checkbox--01-04">
-            <span></span>                              
+            <span></span>
             <label for="checkbox--01-04">Option 4</label>
         </li>
     </ul>
 </form>
-
-
-
-
-
-
-

@@ -35,5 +35,3 @@ description: |
         </li>
     </ul>
 </form>
-
-

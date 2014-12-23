@@ -1,8 +1,10 @@
 ---
 layout: base
-title: Hello World
-pattern-stylesheet: true
+title: Pattern Library
 ---
+
+{% assign components = site.components | sort: 'group' %}
+{% assign templates = site.templates | sort: 'group' %}
 
 <main role="main">
     <header class="pattern__header">
@@ -11,10 +13,14 @@ pattern-stylesheet: true
             <nav class="pattern__nav">
                 <h2>Components</h2>
                 <ul>
-                    {% assign components = site.pages | where: 'dir', '/patterns' | sort: 'group' %}
-
                     {% for component in components %}
                         <li><a href="#component__{{ component.title | slugify }}">{{ component.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                <h2>Templates</h2>
+                <ul>
+                    {% for template in templates %}
+                        <li><a href="{{ template.url }}">{{ template.title }}</a></li>
                     {% endfor %}
                 </ul>
             </nav>
