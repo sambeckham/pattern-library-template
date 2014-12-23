@@ -24,8 +24,8 @@ module.exports = {
             'dev/*.{html,md}',
             'dev/_includes/*.{html,scss}',
             'dev/_layouts/*.html',
-            'dev/patterns/*.html',
             'dev/templates/*.html',
+            'dev/_components/*.{md,markdown,html}',
             'dev/_plugins/*.rb'
         ],
         tasks: [
