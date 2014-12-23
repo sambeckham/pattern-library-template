@@ -7,6 +7,7 @@ serve:
  - 'jekyll:dev'
  - 'sass:dev'
  - 'copy:scripts'
+ - 'copy:images'
  - 'autoprefixer:dev'
  - 'connect'
  - 'watch'
