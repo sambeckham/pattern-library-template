@@ -70,3 +70,15 @@
     	}
 	}
 }
+
+.column_fill{
+    padding: $ratio--inv#{em};
+    display: block;
+    background-color: $color__black;
+    color: $color__white;
+    text-align: center;
+
+    &:hover{
+        background-color: $color__gray;
+    }
+}

@@ -7,6 +7,8 @@ serve:
  - 'jekyll:dev'
  - 'sass:dev'
  - 'copy:scripts'
+ - 'copy:images'
+ - 'copy:fonts'
  - 'autoprefixer:dev'
  - 'connect'
  - 'watch'
@@ -19,5 +21,11 @@ build:
  - 'autoprefixer:dist'
  - 'requirejs'
  - 'modernizr'
+ - 'copy:dist'
  - 'processhtml'
  - 'htmlmin'
+
+regenerate:
+ - 'jekyll:dev'
+ - 'sass:dev'
+ - 'autoprefixer:dev'
