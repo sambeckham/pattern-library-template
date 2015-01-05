@@ -16,6 +16,15 @@ module.exports = {
             src: 'imgs/{,*/}*.{png,jpg,jpeg,gif,svg}'
         }]
     },
+    fonts: {
+        files: [{
+            expand: true,
+            dot: true,
+            cwd: 'dev/_assets/',
+            dest: '.tmp',
+            src: 'fonts/{,*/}*.{eot,svg,ttf,woff,woff2}'
+        }]
+    },
      dist:{
         files: [{
             expand: true,
@@ -23,6 +32,13 @@ module.exports = {
             cwd: 'dev/_assets/',
             dest: 'web',
             src: ['imgs/{,*/}*.{png,jpg,jpeg,gif,svg}']
+        },
+        {
+            expand: true,
+            dot: true,
+            cwd: 'dev/_assets/',
+            dest: 'web',
+            src: 'fonts/{,*/}*.{eot,svg,ttf,woff,woff2}'
         }]
     }
 };
