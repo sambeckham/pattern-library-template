@@ -17,6 +17,19 @@ module.exports = {
             'regenerate'
         ]
     },
+    images: {
+        files: ['dev/_assets/imgs/{,*/,*/*/}*.{jpg,jpeg,png,gif}'],
+        tasks: [
+            'sprite',
+            'copy:images'
+        ]
+    },
+    fonts: {
+        files: ['dev/_assets/fonts/{,*/,*/*/}*.{eot,svg,ttf,woff,woff2}'],
+        tasks: [
+            'copy:fonts'
+        ]
+    },
     jekyll: {
         files: [
             'dev/*.{html,md}',
