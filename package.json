@@ -1,7 +1,7 @@
 {
     "name": "pattern-library-template",
     "description": "A simple template/boilerplate for a Jekyll-generated pattern library.",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "devDependencies": {
         "grunt": "^0.4.5",
         "grunt-autoprefixer": "^1.0.1",
