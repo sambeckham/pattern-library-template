@@ -4,7 +4,9 @@
     "dependencies": {
         "modernizr": "latest",
         "jquery": "~1.11.0",
-        "requirejs": "~2.1.15"
+        "requirejs": "~2.1.15",
+        "respond": "~1.4.2",
+        "svg4everybody": "~1.0.0"
     },
     "devDependencies": {}
 }
