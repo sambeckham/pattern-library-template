@@ -6,9 +6,9 @@ serve:
  - 'svgstore'
  - 'jekyll:dev'
  - 'sass:dev'
- - 'svg2png:dev'
  - 'copy:scripts'
  - 'copy:images'
+ - 'copy:fonts'
  - 'autoprefixer:dev'
  - 'connect'
  - 'watch'
@@ -22,7 +22,6 @@ build:
  - 'requirejs'
  - 'modernizr'
  - 'copy:dist'
- - 'svg2png:dist'
  - 'processhtml'
  - 'htmlmin'
 
