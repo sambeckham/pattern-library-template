@@ -1,0 +1,15 @@
+@keyframes slide-in-right {
+    0% {
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        transform: none;
+    }
+
+}
+
+%animation__slide-in-right,
+.animation__slide-in-right{
+    animation-name: slide-in-right;
+}

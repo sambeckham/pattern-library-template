@@ -1,0 +1,32 @@
+$animation__timing : 1s;
+$animation__timing--interaction : 0.4s;
+
+@import "animations/bounce-out-up.scss";
+@import "animations/fade-in-down.scss";
+@import "animations/fade-in-left.scss";
+@import "animations/fade-in.scss";
+@import "animations/fade-out.scss";
+@import "animations/flash.scss";
+@import "animations/linear.scss";
+@import "animations/shake.scss";
+@import "animations/slide-in-right.scss";
+@import "animations/spin.scss";
+@import "animations/zoom-in-down.scss";
+
+.animation{
+    animation-duration: $animation__timing;
+    animation-fill-mode: both;
+}
+
+.animation--infinite {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+
+
+
+
+
