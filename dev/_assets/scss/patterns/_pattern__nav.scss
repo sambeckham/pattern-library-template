@@ -82,10 +82,7 @@
     }
 
      &:target{
-        @extend .animation;
-        @extend %animation__fade-in;
-
-        transition: opacity $animation__timing;
+        transition: all 1s ease-in;
         opacity: 1;
         margin-top: 0;
     }
