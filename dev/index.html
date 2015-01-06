@@ -3,24 +3,25 @@ layout: base
 title: Pattern Library
 ---
 
-{% assign components = site.components | sort: 'group' %}
+{% assign components = site.components | sort: 'group-id'  %}
 {% assign templates = site.templates | sort: 'group' %}
 
 <main role="main">
     <header class="pattern__header">
         <div class="wrapper">
             <h1>Pattern Library</h1>
-            <nav class="pattern__nav">
-                <h2>Components</h2>
+             <nav class="pattern__nav" id="pattern__menu">
                 <ul>
                     {% for component in components %}
-                        <li><a href="#component__{{ component.title | slugify }}">{{ component.title }}</a></li>
-                    {% endfor %}
-                </ul>
-                <h2>Templates</h2>
-                <ul>
-                    {% for template in templates %}
-                        <li><a href="{{ template.url }}">{{ template.title }}</a></li>
+                        {% if component.group-id != lastGroup %}
+                            <li class="pattern__nav__group">
+                                <a href="#component__{{ component.title | slugify }}">{{ component.group-name }}</a>
+                            </li>
+                        {% endif %}
+                            <li class="pattern__nav__component">
+                                <a href="#component__{{ component.title | slugify }}">{{ component.title }}</a>
+                            </li>
+                        {% assign lastGroup = component.group-id %}
                     {% endfor %}
                 </ul>
             </nav>
