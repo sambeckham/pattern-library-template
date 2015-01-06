@@ -9,7 +9,7 @@ module.exports = {
     },
     dev: {
         files: {
-            'dev/_includes/icon-sprite.svg': ['dev/_assets/svg/*.svg'],
+            'dev/_assets/imgs/sprite/icon-sprite.svg': ['dev/_assets/svg/*.svg'],
         },
     }
 };
