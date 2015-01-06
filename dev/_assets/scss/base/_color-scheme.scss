@@ -4,6 +4,8 @@ $color__black : #333;
 $color__gray : #999;
 $color__white : #ecf0f1;
 
+
+//example of colors and there usage
 $color__blue: #3498db;
 $color__blue--light: lighten($color__blue, 20%);
 $color__blue--dark: darken($color__blue, 20%);
@@ -32,4 +34,4 @@ $color__facebook : #3b5998;
 $color__positive : $color__green;
 $color__negative : $color__red;
 
-$color__primary : $color__blue;
+$color__primary : $color__gray;
