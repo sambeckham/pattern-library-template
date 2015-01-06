@@ -82,6 +82,7 @@
     }
 
      &:target{
+        transition: all 1s ease-in;
         opacity: 1;
         margin-top: 0;
     }
