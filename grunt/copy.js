@@ -32,8 +32,13 @@ module.exports = {
             cwd: 'dev/_assets/',
             dest: 'web',
             src: ['imgs/{,*/}*.{png,jpg,jpeg,gif,svg}']
-        },
-        {
+        },{
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/svg4everybody',
+            dest: 'web/resources/scripts/vendor',
+            src: 'svg4everybody.js'
+        },{
             expand: true,
             dot: true,
             cwd: 'dev/_assets/',
