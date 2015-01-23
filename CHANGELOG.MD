@@ -1,6 +1,11 @@
 # Change Log
 See [this guide](http://keepachangelog.com/) for tips on adding to this changelog
 
+## Unreleased - 23rd Jan 2015
+
+### Added
+	- Grid example added into a component to view
+
 ## [1.0.1] - 22 Jan 2015
 
 ### Fixed
