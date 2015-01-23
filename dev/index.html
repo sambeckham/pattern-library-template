@@ -28,6 +28,17 @@ title: Pattern Library
                             </li>
                         {% assign lastGroup = component.group-id %}
                     {% endfor %}
+                    {% for template in templates %}
+                        {% if template.group != lastGroup %}
+                            <li class="pattern__nav__group">
+                                <p>{{ template.group }}</p>
+                            </li>
+                        {% endif %}
+                            <li class="pattern__nav__component">
+                                <a href="{{template.url}}">{{ template.title }}</a>
+                            </li>
+                        {% assign lastGroup = template.group %}
+                    {% endfor %}
                 </ul>
             </nav>
         </div>
