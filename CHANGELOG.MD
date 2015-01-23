@@ -5,6 +5,7 @@ See [this guide](http://keepachangelog.com/) for tips on adding to this changelo
 
 ### Added
 	- Grid example added into a component to view
+	- Redacted added to replace Lauren ipsum if required
 
 ## [1.0.1] - 22 Jan 2015
 
