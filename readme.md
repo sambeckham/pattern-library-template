@@ -1,6 +1,6 @@
 # Pattern Library Template
 
-This template gets you set up with everything you need to get started on your own pattern library. It uses Jekyll, grunt, sass out of the box and is ready to add in as many components as you wish. Use includes and set up page templates as you see fit.
+This template gets you set up with everything you need to get started on your own responsive pattern library. It uses Jekyll, grunt, sass out of the box and is ready to add in as many components as you wish. Use includes and set up page templates as you see fit.
 
 ## Set up
 In order to run this pattern library generator correctly you'll need to follow a couple of steps first.

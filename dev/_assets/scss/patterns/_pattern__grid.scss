@@ -1,44 +1,11 @@
-.example_grid .row{
-    background-color: rgba($color__black, $ratio--inv / 2);
-}
-
-.example{
-    margin: $ratio#{em} 0;
-}
-
-.column_fill{
-    padding: $ratio--inv#{em};
-    display: block;
+.column_fill {
     background-color: $color__black;
     color: $color__white;
+    display: block;
+    padding: $ratio--inv#{em};
     text-align: center;
 
-    &:hover{
-        background-color: $color__pink;
-    }
-
-    &.pink{
-        background-color: $color__pink;
-    }
-
-    &.orange{
-        background-color: $color__orange;
-    }
-
-    &.green{
-        background-color: $color__green;
-    }
-
-    &.black{
-        background-color: $color__black;
-    }
-
-    &.grey{
-        background-color: $color__gray;
-    }
-
-    &.white{
-        background-color: $color__white;
-        color: $color__black;
+    &:hover {
+        background-color: $color__blue;
     }
 }
