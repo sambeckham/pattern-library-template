@@ -36,7 +36,7 @@ module.exports = {
             expand: true,
             dot: true,
             cwd: 'bower_components/svg4everybody',
-            dest: 'web/resources/scripts/vendor',
+            dest: 'web/scripts/vendor',
             src: 'svg4everybody.js'
         },{
             expand: true,
