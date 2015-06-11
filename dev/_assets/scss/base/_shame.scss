@@ -1,1 +1,6 @@
 // Don't leave stuff in here, it's lazy and everyone will hate you for it.
+
+.hide { 
+	height: 0 !important;
+	transition: height 2s ease;
+}

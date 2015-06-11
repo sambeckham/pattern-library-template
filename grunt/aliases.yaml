@@ -25,7 +25,7 @@ build:
 regenerate:
  - 'jekyll:dev'
  - 'sass:dev'
- - 'browserify:dev'
  - 'autoprefixer:dev'
+ - 'browserify:dev'
  - 'copy:images'
  - 'copy:fonts'

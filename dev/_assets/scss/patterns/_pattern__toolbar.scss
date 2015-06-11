@@ -9,11 +9,19 @@ body {
     min-height: 100%;
     padding: 0;
     margin: 0 auto;
-    position: relative;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 }
 
-.sizes {
+.toolbar__show {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.toolbar {
     padding: .2em;
+    height: 3em;
     margin: 0;
     text-align: center;
     position: absolute;
@@ -23,7 +31,8 @@ body {
     width: 100%;
     list-style: none;
     background: #ccc;
-    
+    transition: height 2s ease;
+
     li {
         display: inline-block;
         padding: .5em;
