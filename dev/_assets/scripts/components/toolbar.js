@@ -4,12 +4,12 @@ $.fn.toolbar = function (options) {
     $('.toolbar__show').on('click', function(e){
     	e.preventDefault();
     	$('.toolbar').toggleClass('hide');
-    	if($('.toolbar').hasClass('hide')){
-    		$('body').css('margin-top', '0');
+		var body = $('body');
+    	if($(body).hasClass('add_margin')){
+    		$(body).removeClass('add_margin');
     	} else{
-    		$('body').css('margin-top', '3em');
+    		$(body).addClass('add_margin');
     	}
-
     });
     console.log('This is the toolbar');
     $('.toolbar').on('click', '[data-width]', function() {
