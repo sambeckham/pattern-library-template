@@ -1,7 +1,7 @@
 {
   "name": "pattern-library-template",
   "description": "A simple template/boilerplate for a Jekyll-generated pattern library.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "browser": {
     "jquery": "./dev/scripts/jquery.js"
   },
