@@ -1,13 +1,17 @@
 # Change Log
 See [this guide](http://keepachangelog.com/) for tips on adding to this changelog
 
-## Unreleased - 23rd Jan 2015
+## [1.1.1] Feature release - 12th June 2015
 
 ### Added
+	- Toolbar in template view
 	- Grid example added into a component to view
 	- Redacted added to replace Lauren ipsum if required
 
-## [1.0.1] - 22 Jan 2015
+### Changed
+	- Require replaced with browserify
+
+## [1.0.1] hotfix - 22 Jan 2015
 
 ### Fixed
 	- svg4everybody IE fix. ie9 and ie10 do not support svg sprites unless they are included on the page. This plug in adds this support.
