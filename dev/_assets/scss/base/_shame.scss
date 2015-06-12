@@ -1,8 +1,8 @@
 // Don't leave stuff in here, it's lazy and everyone will hate you for it.
 
-.hide { 
-	height: 0;
-	transition: all 0.5s;
+.show { 
+	height: 3em !important;
+	transition: height 1s ease;
 }
 
 .add_margin {
