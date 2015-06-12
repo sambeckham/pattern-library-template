@@ -29,6 +29,7 @@ We've included some basic stuff to get you started but feel free to rip anything
 	* Copy
 	* Htmlmin
 	* Requirejs
+	* Browserify
 	* Sass
 	* Watch
 	* Jekyll
