@@ -5,9 +5,11 @@ This template gets you set up with everything you need to get started on your ow
 ## Set up
 In order to run this pattern library generator correctly you'll need to follow a couple of steps first.
 
-1. `$ gem install jekyll` — If you don't already have jekyll on your machine.
-2. `$ npm install` — To get all the dependencies for grunt.
-3. `$ bower install` — To get all the dependencies for bower.
+1. You will need node on your machine visit [https://nodejs.org/](https://nodejs.org/) and install.
+2. `$ gem install jekyll` — If you don't already have jekyll on your machine.
+3. `$ npm install` — To get all the dependencies for grunt.
+4. `$ bower install` — To get all the dependencies for bower.
+
 
 ## Running the project
 Run `grunt` or `grunt serve` on the command line and the project will build itself, set up a server, open the index page, and wait for you to make changes.

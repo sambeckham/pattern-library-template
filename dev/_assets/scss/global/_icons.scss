@@ -4,6 +4,12 @@
     height: $ratio#{em};
 }
 
+.icon__toolbar, .icon__scale{
+	width: 2 + $ratio#{em};
+	fill: $color__gray;
+	stroke: $color__gray;
+}
+
 .icon__facebook{
 	fill: $color__facebook;
 }
