@@ -1,6 +1,11 @@
 # Change Log
 See [this guide](http://keepachangelog.com/) for tips on adding to this changelog
 
+## [1.1.2] Hotfix - 12th June 2015
+	- Add toolbar to components
+	- remove roundel icon and add view
+	- modify read me to include browserify
+
 ## [1.1.1] Feature release - 12th June 2015
 
 ### Added
