@@ -115,7 +115,7 @@ Vagrant.configure("2") do |config|
 		virtualbox.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 	end
 
-	config.vm.provision :shell, :inline => "echo #{Base64.strict_encode64($provision)} | base64 --decode > /tmp/provision.pp"
+	config.vm.provision :shell, :inline => "echo '#{Base64.strict_encode64($provision)}' | base64 --decode > /tmp/provision.pp"
 	config.vm.provision :shell, :inline => "puppet apply -v /tmp/provision.pp"
 
 end
