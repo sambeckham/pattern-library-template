@@ -1,6 +1,4 @@
-require 'base64'
-
-$provision = <<PUPPET
+$manifest = <<PUPPET
 
 	Exec {
 	    path => ['/usr/bin', '/bin', '/usr/sbin', '/sbin', '/usr/local/bin', '/usr/local/sbin']
@@ -98,6 +96,11 @@ $provision = <<PUPPET
 
 PUPPET
 
+def inline_puppet(manifest)
+	require 'base64'
+	"TMPFILE=$(mktemp); echo '#{Base64.strict_encode64(manifest)}' | base64 --decode > $TMPFILE; puppet apply -v $TMPFILE"
+end
+
 Vagrant.configure("2") do |config|
 	
 	config.vm.box = "trusty64"
@@ -115,7 +118,6 @@ Vagrant.configure("2") do |config|
 		virtualbox.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 	end
 
-	config.vm.provision :shell, :inline => "echo '#{Base64.strict_encode64($provision)}' | base64 --decode > /tmp/provision.pp"
-	config.vm.provision :shell, :inline => "puppet apply -v /tmp/provision.pp"
+	config.vm.provision :shell, :inline => inline_puppet($manifest)
 
 end
